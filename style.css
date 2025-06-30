@@ -1,33 +1,35 @@
+/* General Styles */
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
+  scroll-behavior: smooth;
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
 }
 
+/* Header */
 header {
+  background: linear-gradient(to bottom right, #0078d7, #00aaff);
   color: white;
   text-align: center;
-  background: #0078d7;
-  padding: 2em 1em;
+  padding: 1em;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  padding: 1em;
 }
 
 .navbar .logo a {
   color: white;
-  text-decoration: none;
   font-size: 1.5em;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .nav-links {
@@ -42,46 +44,82 @@ header {
   font-weight: bold;
 }
 
-.hero h1 {
-  margin: 0.5em 0;
-  font-size: 2.5em;
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2em;
 }
 
-.hero p {
-  font-size: 1.2em;
-  margin-bottom: 1.5em;
+.hero-text {
+  flex: 1;
 }
 
-.hero .btn {
-  background: #0056a4;
-  padding: 10px 20px;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
+.hero-graphic img {
+  max-width: 100%;
+  height: auto;
 }
 
+/* Section Styling */
 .section {
-  padding: 2em 1em;
+  padding: 2em;
 }
 
-.skills-grid, .project-grid {
+.about, .experience {
+  background-color: #f4f4f4;
+}
+
+.skills, .projects, .contact {
+  background-color: #ffffff;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1.5em;
+  color: #0078d7;
+}
+
+/* Cards */
+.card-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2em;
-}
-
-.timeline {
-  border-left: 3px solid #0078d7;
-  padding-left: 1em;
-}
-
-.timeline-item {
-  margin-bottom: 2em;
-}
-
-footer {
-  background: #333;
-  color: white;
+  gap: 1.5em;
   padding: 1em 0;
+}
+
+.skill-card, .project-card {
+  background-color: #e3f2fd;
+  border-radius: 8px;
+  padding: 1em;
   text-align: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.skill-card:hover, .project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.project-card p {
+  color: #0078d7;
+}
+
+.footer {
+  background: #0078d7;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
 }
