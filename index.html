@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio | Disen Chitilapilly Devassy</title>
+  <title>Disen Chitilapilly Devassy | Portfolio</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
   <div class="container">
+    <!-- Header Section -->
     <header>
       <nav class="navbar">
         <div class="logo">
@@ -23,111 +24,120 @@
         </ul>
       </nav>
       <div class="hero">
-        <h1>Hi, I'm Disen Chitilapilly Devassy</h1>
-        <p>Lead Software Engineer passionate about creating automation tools and solving challenging software problems.</p>
-        <a href="#contact" class="btn">Get in Touch</a>
+        <div class="hero-text">
+          <h1>Hi, I'm Disen Chitilapilly Devassy</h1>
+          <p>Lead Software Engineer | Passionate Problem Solver | DevOps Specialist</p>
+          <a href="#contact" class="btn">Get in Touch</a>
+        </div>
+        <div class="hero-graphic">
+          <img src="https://via.placeholder.com/400x300/0078d7/ffffff?text=Welcome+to+My+Portfolio" alt="Hero Graphic">
+        </div>
       </div>
     </header>
 
-    <main>
-      <section id="about" class="section about">
+    <!-- About Section -->
+    <section id="about" class="about section">
+      <div class="section-content">
         <h2><i class="fas fa-user"></i> About Me</h2>
         <p>
-          I am a results-driven Software Engineer with over 10 years of experience in developing software automation platforms and tools. My passion lies in building robust, scalable solutions while working collaboratively with cross-functional teams under tight deadlines. I excel in simplifying complex processes with innovative solutions.
+          I'm a results-driven Senior Software Engineer with 10+ years of experience in developing software automation tools. I excel in building robust, scalable solutions and enjoy tackling challenging software problems. Based in Livermore, California, I bring technical expertise and creative solutions to achieve project milestones.
         </p>
-      </section>
+      </div>
+    </section>
 
-      <section id="skills" class="section skills">
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+      <div class="section-content">
         <h2><i class="fas fa-code"></i> Skills</h2>
-        <div class="skills-grid">
-          <div class="skill-item">
+        <div class="card-container">
+          <div class="skill-card">
             <h3>Languages</h3>
             <p>Python, Kotlin, Node.js, C</p>
           </div>
-          <div class="skill-item">
+          <div class="skill-card">
             <h3>Scripting & Frameworks</h3>
             <p>Shell, Bash, Groovy</p>
           </div>
-          <div class="skill-item">
+          <div class="skill-card">
             <h3>Protocols</h3>
-            <p>MQTT, ADB, REST API, VoLTE, TCP/IP</p>
+            <p>MQTT, ADB, REST API, VoLTE, SIP, TCP/IP</p>
           </div>
-          <div class="skill-item">
+          <div class="skill-card">
             <h3>DevOps</h3>
-            <p>Jenkins, GitAction, Kubernetes, Docker, CI/CD</p>
+            <p>Jenkins, GitAction, Kubernetes, Docker</p>
           </div>
-          <div class="skill-item">
+          <div class="skill-card">
             <h3>Cloud</h3>
             <p>AWS (EC2, S3, Lambda, SQS)</p>
           </div>
-          <div class="skill-item">
+          <div class="skill-card">
             <h3>Tools</h3>
-            <p>Pycharm, Android Studio, Terraform</p>
+            <p>RabbitMQ, Jenkins, Terraform</p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="experience" class="section experience">
+    <!-- Experience Section -->
+    <section id="experience" class="experience section">
+      <div class="section-content">
         <h2><i class="fas fa-briefcase"></i> Experience</h2>
-        <div class="timeline">
-          <div class="timeline-item">
+        <div class="experience-content">
+          <div class="experience-item">
             <h3>Zscaler</h3>
-            <span>Staff Software Development Engineer (Apr 2024 - Present)</span>
+            <p><strong>Staff Software Development Engineer</strong> (Apr 2024 - Present)</p>
             <ul>
-              <li>Developed cross-platform migration validation tools.</li>
-              <li>Implemented CI/CD pipelines with GitHub Actions and Docker.</li>
-              <li>Created SDKs for better customer onboarding experience.</li>
+              <li>Developed cross-platform migration validation tools for cloud systems.</li>
+              <li>Implemented CI/CD pipelines with Jenkins and GitHub Actions.</li>
+              <li>Enhanced in-house frameworks with advanced scalability via Kubernetes.</li>
             </ul>
           </div>
-          <div class="timeline-item">
+          <div class="experience-item">
             <h3>Logitech</h3>
-            <span>Lead SDET Engineer (Jun 2018 - Apr 2024)</span>
+            <p><strong>Lead SDET Engineer</strong> (Jun 2018 - Apr 2024)</p>
             <ul>
-              <li>Designed Android app with AWS IoT Core and MQTT protocols.</li>
-              <li>Led CI/CD autonomous test system with 99.9% uptime.</li>
-              <li>Dockerized test environment to improve build efficiency.</li>
-            </ul>
-          </div>
-          <div class="timeline-item">
-            <h3>Ooma</h3>
-            <span>Automation IoT Engineer (Jun 2016 - Jun 2018)</span>
-            <ul>
-              <li>Created extensive REST API testing framework.</li>
-              <li>Automated home sensor features using Flask and Python.</li>
-              <li>Performed load testing on IoT sensor back-end servers.</li>
+              <li>Created an Android diagnostics app integrating AWS IOT Core & MQTT.</li>
+              <li>Led CI/CD architecture for a test system achieving 99.9% uptime.</li>
+              <li>Reduced test run times by 50% with Dockerized test environments.</li>
             </ul>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="projects" class="section projects">
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+      <div class="section-content">
         <h2><i class="fas fa-project-diagram"></i> Projects</h2>
-        <div class="project-grid">
-          <div class="project-card">
-            <h3>Project Title 1</h3>
-            <p>Details about this project and the technologies used.</p>
-          </div>
+        <div class="card-container">
           <div class="project-card">
             <h3>Migration Validation Tool</h3>
-            <p>Cross-platform tool using Python, Docker, and Kubernetes for co-platform validation.</p>
+            <p>Cross-platform tool ensuring seamless cloud transitions using Kubernetes and Python.</p>
           </div>
           <div class="project-card">
             <h3>Diagnostics Android App</h3>
-            <p>Built on Kotlin, this app supports IoT Core and MQTT for backend communication.</p>
+            <p>An automated diagnostics app built with Kotlin for real-time analytics.</p>
+          </div>
+          <div class="project-card">
+            <h3>AWS Load Testing Framework</h3>
+            <p>Received 95% feature coverage via automated stress tests on cloud servers.</p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="contact" class="section contact">
-        <h2><i class="fas fa-envelope"></i> Contact</h2>
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+      <div class="section-content">
+        <h2><i class="fas fa-envelope"></i> Contact Me</h2>
         <p><strong>Email:</strong> <a href="mailto:disencd@gmail.com">disencd@gmail.com</a></p>
-        <p><strong>LinkedIn:</strong> <a href="#">LinkedIn Profile</a></p>
         <p><strong>GitHub:</strong> <a href="https://github.com/yourprofile">github.com/yourprofile</a></p>
-      </section>
-    </main>
+        <p><strong>LinkedIn:</strong> <a href="#">LinkedIn Profile</a></p>
+      </div>
+    </section>
 
-    <footer>
-      <h3>© 2025 Disen Chitilapilly Devassy. All Rights Reserved.</h3>
+    <footer class="footer">
+      <p>© 2025 Disen Chitilapilly Devassy | Built with ❤️</p>
     </footer>
   </div>
 </body>
