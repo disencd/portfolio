@@ -3,93 +3,132 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Disen Chitilapilly Devassy Portfolio</title>
+  <title>Portfolio | Disen Chitilapilly Devassy</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <h1>Disen Chitilapilly Devassy</h1>
-    <p>Lead Software Engineer | Livermore, California</p>
-    <p>Email: <a href="mailto:disencd@gmail.com">disencd@gmail.com</a> | Phone: <a href="tel:8583973190">858.397.3190</a></p>
-  </header>
-
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        Passionate and results-driven Senior Software Engineer with 10+ years of experience in developing software automation platforms and tools. Adept at navigating both wireless and application protocol stacks.
-      </p>
-    </section>
-
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li><strong>Programming Languages:</strong> Python, Kotlin, Node.js, C</li>
-        <li><strong>Scripting Languages:</strong> Shell, Bash, Groovy</li>
-        <li><strong>Protocols:</strong> MQTT, ADB, REST API, LTE, VoLTE, SIP, TCP/IP</li>
-        <li><strong>Operating Systems:</strong> Linux, Windows, Android</li>
-        <li><strong>Servers & Tools:</strong> RabbitMQ, Squid, Nginx, Jenkins, Pycharm, Vim, Visual Studio, Android Studio</li>
-        <li><strong>CI/CD & Automation:</strong> Jenkins, GitAction, Ansible, Terraform, Docker, Kubernetes</li>
-        <li><strong>Databases:</strong> PostgreSQL, MongoDB</li>
-        <li><strong>Cloud Platforms:</strong> AWS (EC2, S3, Lambda, SQS, ECR)</li>
-        <li><strong>Containerization:</strong> Docker, Kubernetes</li>
-      </ul>
-    </section>
-
-    <section id="experience">
-      <h2>Experience</h2>
-      <article>
-        <h3>Zscaler</h3>
-        <p><strong>Staff Software Development Engineer</strong> (April 2024 - Present, San Jose)</p>
-        <ul>
-          <li>Designed and developed cross-platform migration validation tools to ensure seamless transitions.</li>
-          <li>Implemented CI/CD pipelines using Jenkins, GitHub Actions, and Dockerization.</li>
-          <li>Enhanced in-house frameworks with Kubernetes for scalability testing.</li>
-          <li>Developed Zscaler Dev SDKs to improve customer onboarding processes.</li>
+  <div class="container">
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="#">Disen CD</a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-      </article>
+      </nav>
+      <div class="hero">
+        <h1>Hi, I'm Disen Chitilapilly Devassy</h1>
+        <p>Lead Software Engineer passionate about creating automation tools and solving challenging software problems.</p>
+        <a href="#contact" class="btn">Get in Touch</a>
+      </div>
+    </header>
 
-      <article>
-        <h3>Logitech</h3>
-        <p><strong>Lead SDET Engineer</strong> (June 2018 - April 2024, San Jose)</p>
-        <ul>
-          <li>Designed diagnostics Android apps with AWS IoT Core and MQTT.</li>
-          <li>Led CI/CD automation systems with 99.9% uptime.</li>
-          <li>Dockerized client applications to improve efficiency by 50%.</li>
-        </ul>
-      </article>
+    <main>
+      <section id="about" class="section about">
+        <h2><i class="fas fa-user"></i> About Me</h2>
+        <p>
+          I am a results-driven Software Engineer with over 10 years of experience in developing software automation platforms and tools. My passion lies in building robust, scalable solutions while working collaboratively with cross-functional teams under tight deadlines. I excel in simplifying complex processes with innovative solutions.
+        </p>
+      </section>
 
-      <article>
-        <h3>Ooma</h3>
-        <p><strong>Automation IoT Engineer</strong> (June 2016 - June 2018, Sunnyvale)</p>
-        <ul>
-          <li>Created a Python-based framework for REST API testing.</li>
-          <li>Conducted load/stress testing on backend servers using Dockerized frameworks.</li>
-        </ul>
-      </article>
+      <section id="skills" class="section skills">
+        <h2><i class="fas fa-code"></i> Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <h3>Languages</h3>
+            <p>Python, Kotlin, Node.js, C</p>
+          </div>
+          <div class="skill-item">
+            <h3>Scripting & Frameworks</h3>
+            <p>Shell, Bash, Groovy</p>
+          </div>
+          <div class="skill-item">
+            <h3>Protocols</h3>
+            <p>MQTT, ADB, REST API, VoLTE, TCP/IP</p>
+          </div>
+          <div class="skill-item">
+            <h3>DevOps</h3>
+            <p>Jenkins, GitAction, Kubernetes, Docker, CI/CD</p>
+          </div>
+          <div class="skill-item">
+            <h3>Cloud</h3>
+            <p>AWS (EC2, S3, Lambda, SQS)</p>
+          </div>
+          <div class="skill-item">
+            <h3>Tools</h3>
+            <p>Pycharm, Android Studio, Terraform</p>
+          </div>
+        </div>
+      </section>
 
-      <article>
-        <h3>Qualcomm</h3>
-        <p><strong>MST Automation Engineer</strong> (Feb 2014 - June 2016, San Diego)</p>
-        <ul>
-          <li>Developed telephony test validation tools for SIP, IMS, RTP.</li>
-          <li>Enhanced Android and Windows UI test frameworks using Perl.</li>
-        </ul>
-      </article>
+      <section id="experience" class="section experience">
+        <h2><i class="fas fa-briefcase"></i> Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h3>Zscaler</h3>
+            <span>Staff Software Development Engineer (Apr 2024 - Present)</span>
+            <ul>
+              <li>Developed cross-platform migration validation tools.</li>
+              <li>Implemented CI/CD pipelines with GitHub Actions and Docker.</li>
+              <li>Created SDKs for better customer onboarding experience.</li>
+            </ul>
+          </div>
+          <div class="timeline-item">
+            <h3>Logitech</h3>
+            <span>Lead SDET Engineer (Jun 2018 - Apr 2024)</span>
+            <ul>
+              <li>Designed Android app with AWS IoT Core and MQTT protocols.</li>
+              <li>Led CI/CD autonomous test system with 99.9% uptime.</li>
+              <li>Dockerized test environment to improve build efficiency.</li>
+            </ul>
+          </div>
+          <div class="timeline-item">
+            <h3>Ooma</h3>
+            <span>Automation IoT Engineer (Jun 2016 - Jun 2018)</span>
+            <ul>
+              <li>Created extensive REST API testing framework.</li>
+              <li>Automated home sensor features using Flask and Python.</li>
+              <li>Performed load testing on IoT sensor back-end servers.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-      <article>
-        <h3>Global Edge</h3>
-        <p><strong>Software Developer</strong> (Dec 2011 - Feb 2014, Bangalore)</p>
-        <ul>
-          <li>Developed RLC and NAS layers for eNodeB in LTE systems using C.</li>
-          <li>Built Python unit testing frameworks for LTE protocols.</li>
-        </ul>
-      </article>
-    </section>
-  </main>
+      <section id="projects" class="section projects">
+        <h2><i class="fas fa-project-diagram"></i> Projects</h2>
+        <div class="project-grid">
+          <div class="project-card">
+            <h3>Project Title 1</h3>
+            <p>Details about this project and the technologies used.</p>
+          </div>
+          <div class="project-card">
+            <h3>Migration Validation Tool</h3>
+            <p>Cross-platform tool using Python, Docker, and Kubernetes for co-platform validation.</p>
+          </div>
+          <div class="project-card">
+            <h3>Diagnostics Android App</h3>
+            <p>Built on Kotlin, this app supports IoT Core and MQTT for backend communication.</p>
+          </div>
+        </div>
+      </section>
 
-  <footer>
-    <p>© 2025 Disen Chitilapilly Devassy | Built with ❤️ using HTML and CSS.</p>
-  </footer>
+      <section id="contact" class="section contact">
+        <h2><i class="fas fa-envelope"></i> Contact</h2>
+        <p><strong>Email:</strong> <a href="mailto:disencd@gmail.com">disencd@gmail.com</a></p>
+        <p><strong>LinkedIn:</strong> <a href="#">LinkedIn Profile</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/yourprofile">github.com/yourprofile</a></p>
+      </section>
+    </main>
+
+    <footer>
+      <h3>© 2025 Disen Chitilapilly Devassy. All Rights Reserved.</h3>
+    </footer>
+  </div>
 </body>
 </html>
